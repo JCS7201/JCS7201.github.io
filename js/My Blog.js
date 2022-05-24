@@ -1,0 +1,31 @@
+$(function(){
+    // 按钮的变换
+    $(".info-menu>.glyphicon-menu-hamburger").click(function(){
+        $(".info-menu>.glyphicon-remove").toggle();
+        $(".info-menu>.glyphicon-menu-hamburger").hide();
+        $(".box").animate({width:"35%"},500);
+        $(".bg-box").show();
+        $(".info-menu-link").show();
+    })
+    $(".info-menu>.glyphicon-remove").click(function(){
+        $(".info-menu>.glyphicon-menu-hamburger").toggle();
+        $(".info-menu>.glyphicon-remove").hide();
+        $(".box").animate({width:"0px"},500);
+        $(".bg-box").hide();
+        $(".info-menu-link").hide();
+    })
+    $(".anchor").click(function(event){     
+        event.preventDefault();//防止打开a标签URL进行跳转
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    });
+    $(".info-xs>.info-xs-icon>.glyphicon-menu-hamburger").click(function(){
+        $(".info-xs-icon>.glyphicon-remove").toggle();
+        $(".info-xs-icon>.glyphicon-menu-hamburger").hide();
+        $(".info-xs>.info-xs-menu").show();
+    })
+    $(".info-xs>.info-xs-icon>.glyphicon-remove").click(function(){
+        $(".info-xs-icon>.glyphicon-menu-hamburger").toggle();
+        $(".info-xs-icon>.glyphicon-remove").hide();
+        $(".info-xs>.info-xs-menu").hide();
+    })
+})

@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* 页面 */
+body{
+    background: url(../img/18.jpg) no-repeat fixed;
+    background-size: 100% 100%;
+}
+.bg-color{
+    padding-top: 200px;
+    padding-bottom: 295px;
+    background-color: black;
+    color: white;
+}
+.bg-color .col-md-12{
+    padding-top: 25px;
+}
+.bg-color .col-md-12 h2{
+    font-weight: 900;
+}
+.bg-color .col-md-12 h5{
+    letter-spacing: 10px;
+}
+.glyphicon{
+    font-size: 30px;
+    top: 10px;
+}
+.link-Blog{
+    margin-top: 200px;
+    border-radius: 25px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    transition: background-color 1s;
+}
+.link-Blog:hover{
+    background-color: yellowgreen;
+}
+.info-menu{
+    text-align: center;
+    line-height: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transition: background-color 1s;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    background-color: rgba(220,220,220,0.2);
+    z-index: 3;
+}
+.info-menu:hover{
+    background-color: yellowgreen;
+}
+.info-menu .glyphicon{
+    font-size: 20px;
+    top: 15px;
+}
+.info-menu .glyphicon-remove{
+    display: none;
+}
+.info-menu-link{
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    z-index: 3;
+    font-size: 20px;
+    width: 100px;
+    height: 530px;
+    display: none;
+}
+.info-menu-link .info-menu-link-text a{
+    display: block;
+    color: rgb(78, 77, 77);
+    text-decoration: none;
+    margin-left: 55px;
+    padding-top: 50px;
+}
+.info-menu-link .info-menu-link-text a:hover{
+    text-decoration: line-through;
+    color: yellowgreen;
+}
+.info-menu-link .info-menu-link-name{
+    margin-top: 270px;
+    font-family: serif;
+    display:block;
+}
+.info-xs{
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    z-index: 2;
+}
+.info-xs-menu{
+    width: 50px;
+    margin-top: 10px;
+    background-color: white;
+    display: none;
+}
+.info-xs-menu a{
+    display: block;
+    color: rgb(97, 58, 58);
+    text-decoration: none;
+    padding-top: 10px;
+}
+.info-xs-menu a:hover{
+    color: yellowgreen;
+    text-decoration: line-through;
+}
+.info-xs .info-xs-icon .glyphicon{
+    color: white;
+    font-size: 20px;
+}
+.info-xs .info-xs-icon .glyphicon-remove{
+    display: none;
+}
+/* 主体 */
+.box{
+    width: 0px;
+    height: 125%;
+    background-color: white;
+    position: fixed;
+    right: -100px;
+    top: -100px;
+    transform: rotate(12deg);
+    z-index: 2;
+}
+.two-bg-color{
+    height: 100%;
+    background-color: white;
+}
+.two-bg-color .col-md-4{
+    height: 300px;
+    margin-top: 30px;
+    line-height: 185px;
+    /* background-color: yellowgreen; */
+}
+.bg-box{
+    background-color: rgba(8,8,8,0.2);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+.three-bg-color{
+    height: 300px;
+}
+.three-bg-color .btn-lg{
+    margin-top: 125px;
+    width: 200px;
+	border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    transition: background-color 1s;
+}
+.three-bg-color .btn-lg:hover{
+    background-color: yellowgreen;
+}
+.four-bg-color{
+    height: 300px;
+    background-color: white;
+}
+.four-bg-color .col-md-12:nth-child(1){
+    margin-top: 100px;
+    font-weight: 600;
+}
+.footer-bg-color{
+    height: 200px;
+    background-color: #232328;
+    color: white;
+}
+@media screen and ( max-width:768px ) {
+   .info-md{
+    display: none;
+   }
+   .info-xs{
+       display: block;
+   }
+}
+@media screen and ( min-width:769px ) {
+	.col-sm-4{
+		width: 20%;
+		margin-left: 45px;
+		margin-right: 48px;
+		margin-top: 30px;
+	}
+    .info-md{
+     display: block;
+    }
+    .info-xs{
+        display: none;
+    }
+ }
