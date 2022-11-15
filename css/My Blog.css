@@ -133,9 +133,9 @@ body{
     background-color: white;
 }
 .two-bg-color .col-md-4{
-    height: 300px;
-    margin-top: 30px;
-    line-height: 185px;
+    height: 220px;
+    margin-top: 15px;
+    line-height: 145px;
     /* background-color: yellowgreen; */
 }
 .bg-box{
@@ -148,6 +148,7 @@ body{
 }
 .three-bg-color{
     height: 300px;
+    background-color: rgba(92, 92, 92, 0.401);
 }
 .three-bg-color .btn-lg{
     margin-top: 125px;
@@ -195,4 +196,8 @@ body{
     .info-xs{
         display: none;
     }
+ }
+ .jumbotron{
+    max-width: 330px;
+    margin: 20px;
  }
